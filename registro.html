@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>REGISTRO ESTUDIANTES</h1>
+
+    <form action="" method="get">
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="">Nombre:</label><br>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingreso Nombre" readonly><br>
+
+            <label for="apellido">Apellidos:</label><br>
+            <input type="text" name="apellido" id="apellido" disabled><br>
+
+            <label for="sexo">Sexo:</label><br>
+            <input type="radio" name="sexo" id="sexo1">Hombre
+            <input type="radio" name="sexo" id="sexo2">Mujer
+            <input type="radio" name="sexo" id="sexo3">Otro
+
+            <br>
+
+            <label for="fechanac">Fecha Nacimiento:</label><br>
+            <input type="date" name="fechanac" id="fechanac">
+
+            <br>
+            <label for="celular">Celular:</label><br>
+            <input type="text" name="celular" id="celular" maxlength="8"><br>
+
+            <label for="Direccion">Direccion:</label><br>
+            <textarea name="direccion" id="direccion" cols="30" rows="4"></textarea>
+
+
+        </fieldset>
+        
+        <br>
+
+        <fieldset>
+            <legend>Datos Carrera</legend>
+            <label for="carrera">Carrera:</label><br>
+        <select name="carrera" id="carrera"><br>
+            <option value="">--Elegir Carrera--</option>
+            <option value="1">Ingenieria en Sistemas</option>
+            <option value="2">Ingenieria Biomedica</option>
+            <option value="3">Ingenieria Industrial</option>
+            <option value="4">Medicina</option>
+            <option value="5">Ingenieria de Datos y BI</option>
+        </select>
+
+
+        <br>
+        <label for="dptoorigen">Departaento de Origen</label>
+
+        <select name="" id="">
+            <option value="">Santa Cruz</option>
+            <option value="">La Paz</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        <br>
+
+        <label for="materia">Materias:</label><br>
+        <input type="checkbox" name="mat1" id="mat1">Programacion III
+        <input type="checkbox" name="mat2" id="mat2">Programacion WEB II
+        <input type="checkbox" name="mat3" id="mat3">Robotica
+        <input type="checkbox" name="mat4" id="mat4">Base de datos II
+
+
+        </fieldset>
+        
+        <br><br><br>
+
+        <input type="submit" value="REGISTRAR">
+        <input type="reset" value="LIMPIAR">
+
+
+
+    </form>
+</body>
+</html>
